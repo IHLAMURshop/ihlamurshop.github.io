@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+        background-image: url('arkaplan.png'); /* Resim dosyanızın yolu */
+        background-size: cover; /* Tam ekran kaplama */
+        background-repeat: no-repeat; /* Tekrar etmesin */
+        background-position: center; /* Ortalanmış şekilde konumlandır */    
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+main {
+    padding: 20px;
+}
+
+.kategori {
+    margin-bottom: 40px;
+}
+
+.kategori h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.urun-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.urun {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.urun img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.urun p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.siyahyazi {
+    background: linear-gradient(to right, #000000, #202020, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.gradyan-yazi {
+    background: linear-gradient(to right, #01a337, #00ff00, #42ff6b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradyan-yazi2 {
+    background: linear-gradient(to right, #b90000, #ac1400b2, #5f0015);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Üst Sağ Köşedeki Bilgi Butonu */
+#info-button-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+#info-button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Açılır Bilgi Arayüzü */
+#info-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 999;
+}
+
+.info-content {
+    background-color: rgba(20, 20, 20, 0.87);
+    padding: 50px;
+    border-radius: 12px;
+    width: 450px;
+    margin: 10% auto;
+    position: relative;
+    text-align: center;
+}
+
+/* Kapatma Butonu */
+#close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+<style>
+    .nunito-font {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .nunito-font h3 {
+        font-weight: 700; /* Kalın */
+        font-size: 20px;
+    }
+
+    .nunito-font p {
+        font-weight: 400; /* Normal */
+        font-size: 14px;
+        color: #555;
+    }
+</style>

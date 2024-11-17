@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHLAMURshop e-katalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IHLAMURshop Ürünler
+    </header>
+    <header>
+        <p>"Yayında Olmayan İlanları Satın Almak İçin Bize Ulaşın"
+    </header>
+    <main>
+        <section class="kategori">
+            <h2>Growtopia</h2>
+            <div class="urun-container">
+                <div class="urun">
+                    <img src="resim1.png" alt="Ürün 1">
+                    <p>Growtopia <b>1X</b> Diamond Lock</p>
+                    <b>-12 TL-</b>
+                    <p></p>
+                    <b>Stok Durumu: <b class="gradyan-yazi">Mevcut</b></b>
+                </div>
+                <div class="urun">
+                    <img src="resim1.png" alt="Ürün 1">
+                    <p>Growtopia <b>2x</b> Diamond Lock</p>
+                    <b>-23 TL-</b>
+                    <p></p>
+                    <b>Stok Durumu: <b class="gradyan-yazi">Mevcut</b></b>
+                </div>
+                <div class="urun">
+                    <img src="resim1.png" alt="Ürün 1">
+                    <p>Growtopia <b>5x</b> Diamond Lock</p>
+                    <b>-56 TL-</b>
+                    <p></p>
+                    <b>Stok Durumu: <b class="gradyan-yazi">Mevcut</b></b>
+                </div>
+                <div class="urun">
+                    <img src="resim1.png" alt="Ürün 1">
+                    <p>Growtopia <b>5X</b> Diamond Lock</p>
+                    <b>-56 TL-</b>
+                    <p></p>
+                    <b>Stok Durumu: <b class="gradyan-yazi">Mevcut</b></b>
+                
+            </div>
+        </section>
+
+        <section class="kategori">
+            <h2>Steam/Microsoft/Origin</h2>
+            <div class="urun-container">
+                <div class="urun">
+                    <img src="resim3.png" alt="Ürün 1">
+                    <p>İstediğiniz <b>1</b> Oyun</p>
+                    
+                    <b>-25 TL-</b>
+                    <p></p>
+                    <b>Stok Durumu: <b class="gradyan-yazi">Oyun Sormak İçin Yazınız.</b></b>
+                </div>
+                <div class="urun">
+                    <img src="resim2.png" alt="Ürün 1">
+                    <p>Steam İstediğiniz Oyun Methodu</p>
+                    <b>-50 TL-</b>
+                    <p></p>
+                    <b>Stok Durumu: <b class="gradyan-yazi">Mevcut</b></b>
+                </div>
+            </div>
+        </section>
+
+        <section class="kategori">
+            <h2>League Of Legends</h2>
+            <div class="urun-container">
+                <div class="urun">
+                    <img src="resim4.png" alt="Ürün 1">
+                    <p>Leage Of Legends <b>250 RP<b> TR </p>
+                    <b>-43 TL-</b>
+                    <p></p>
+                    <b>Stok Durumu: <b class="gradyan-yazi">Mevcut</b></b>
+                </div>
+                <div class="urun">
+                    <img src="resim2.png" alt="Ürün 1">
+                    <p>League Of Legends Unranked Handmade (Skin Garantili)</p>
+                    <b>-180 TL-</b>
+                    <p></p>
+                    <b>Stok Durumu: <b class="gradyan-yazi2">Yok</b></b>
+                </div>
+            </div>
+            
+        <!-- Diğer kategoriler ekleyebilirsiniz -->
+        <body>
+            <!-- Bilgi Tuşu -->
+            <div id="info-button-container">
+                <button id="info-button">ℹ️</button>
+            </div>
+        
+            <!-- Açılır Bilgi Arayüzü -->
+            <div id="info-modal">
+                <div class="info-content">
+                    <div class="nunito-font">       
+                    <span id="close-button">&times;</span>
+                    <h3>S.S.S</h3>
+                    <p>ㅤ</p>
+                    <p style="font-size: 12px;">Ödeme Yöntemi: İtemsatış Üzerinden Güvenilir Ödeme!</p>
+                    <p style="font-size: 12px;">İlanlar Aktif Değilse İtemsatış Üzeriden Ulaşınız.</p>
+                    <p style="font-size: 12px;">Teslimat Süremiz Ortalama 30 Dakikadır.(Otomatik Teslimat Mevcut)</p>
+                    <p style="font-size: 12px;"></p>
+                    <p style="font-size: 12px;">İletişim: itemsatis.com/p/IHLAMURshop , ihlamur123shop@gmail.com</p>                   
+                </div>
+            </div>
+        
+
+            
+            <script>
+                // Buton ve Modal Seçimi
+                const infoButton = document.getElementById("info-button");
+                const infoModal = document.getElementById("info-modal");
+                const closeButton = document.getElementById("close-button");
+        
+                // Butona Tıklanıldığında Modalı Göster
+                infoButton.addEventListener("click", () => {
+                    infoModal.style.display = "block";
+                });
+        
+                // Kapat Butonuna Tıklanıldığında Modalı Gizle
+                closeButton.addEventListener("click", () => {
+                    infoModal.style.display = "none";
+                });
+        
+                // Modal Dışına Tıklanıldığında Modalı Gizle
+                window.addEventListener("click", (event) => {
+                    if (event.target === infoModal) {
+                        infoModal.style.display = "none";
+                    }
+                });
+            </script>
+        </body>
+        </html>
+    </main>
+</body>
+</html>
